@@ -42,7 +42,7 @@ function BreadCrunb({path}) {
         href="#"
         className="flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-gray-900"
       >
-        {path.split("/")[1]}
+        {/* {path.split("/")[1]} */}
       </a>
     </li>
   </ol>

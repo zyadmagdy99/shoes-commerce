@@ -25,7 +25,7 @@ function Contact() {
 
       <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
         <form action="#" className="space-y-4">
-          <div>
+          <div className='border-b-2 border-gray-200'>
             <label className="sr-only" htmlFor="name">Name</label>
             <input
               className="w-full rounded-lg border-gray-200 p-3 text-sm"
@@ -36,7 +36,7 @@ function Contact() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
+            <div className='border-b-2 border-gray-200'>
               <label className="sr-only" htmlFor="email">Email</label>
               <input
                 className="w-full rounded-lg border-gray-200 p-3 text-sm"
@@ -46,7 +46,7 @@ function Contact() {
               />
             </div>
 
-            <div>
+            <div className='border-b-2 border-gray-200'>
               <label className="sr-only" htmlFor="phone">Phone</label>
               <input
                 className="w-full rounded-lg border-gray-200 p-3 text-sm"
@@ -59,7 +59,7 @@ function Contact() {
 
          
 
-          <div>
+          <div className='border-b-2 border-gray-200'>
             <label className="sr-only" htmlFor="message">Message</label>
 
             <textarea
@@ -75,7 +75,7 @@ function Contact() {
               type="submit"
               className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
             >
-              Send US
+              Send Us
             </button>
           </div>
         </form>

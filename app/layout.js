@@ -1,11 +1,16 @@
-import { Roboto } from "next/font/google";
+import { Roboto,Playwrite_AU_VIC } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
+
 const geistSans = Roboto({
   variable: "--font-geist-sans",
   subsets: ["latin"],weight: "700",
+});
+const geistSanss = Playwrite_AU_VIC({
+  variable: "--font-geist-sanss",
+  subsets: ["latin"],weight: "400",
 });
 
 
@@ -16,10 +21,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+
     <html lang="en">
+      
       <body
-        className={`${geistSans.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistSanss.variable} antialiased`}
+        >
         <Header />
         {children}
         <Footer/>
